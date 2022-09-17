@@ -46,6 +46,13 @@ public class Main{
         myOdds.forEach( (n) -> System.out.print(n + " "));
         
         
+        System.out.println();
+        Stream<Integer> myOddsFiltered = mylist.stream().filter((n) -> ( n % 2) != 0)
+                                                        .filter(n -> n > 20);
+       
+        
+        System.out.println("Odds number bigger than 20: ");
+        myOddsFiltered.forEach( (n) -> System.out.print(n + " "));
         
         
         
